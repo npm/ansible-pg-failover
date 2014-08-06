@@ -1,5 +1,5 @@
 [postgresql]
-ec2-54-200-35-91.us-west-2.compute.amazonaws.com
+host.example.com
 
 [all:vars]
 ansible_ssh_user=ubuntu

@@ -1,4 +1,7 @@
 ---
 
-#  - name: build couchdb
-#    include: 'couchdb.yml'
+  - name: build pgbouncer
+    include: 'pgbouncer.yml'
+
+  - name: build repmgr
+    include: 'repmgr.yml'

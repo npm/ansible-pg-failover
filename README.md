@@ -1,3 +1,6 @@
 # PG
 
-PostgreSQL role with automated failover in the cloud.
+Install PostgreSQL along with components required for automatic failover:
+
+* pgbouncer.
+* repmgr.

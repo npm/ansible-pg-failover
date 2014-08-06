@@ -13,6 +13,5 @@ galaxy_info:
   categories:
     - psql
     - databses
-dependencies: []
-#  - { role: Ansibles.build-essential }
-#  - { role: "laggyluke.nodejs" }
+dependencies:
+  - { role: Ansibles.postgresql }
