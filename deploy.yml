@@ -1,0 +1,4 @@
+---
+- hosts: postgresql
+  roles:
+    - bcoe.pg
