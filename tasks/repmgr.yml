@@ -1,3 +1,6 @@
 - name: install repmgr
   sudo: true
-  apt: pkg=postgresql-9.2-repmgr state=present force=true update_cache=yes
+  apt: pkg="{{item}}" state=present force=true update_cache=yes
+  with_items:
+    - repmgr
+    - postgresql-9.3-repmgr
