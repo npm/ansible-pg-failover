@@ -1,7 +1,7 @@
 [postgresql]
-bouncer.example.com role=bouncer node=3 response_timeout=180
-replica.example.com role=replica node=2 response_timeout=180
-master.example.com role=master node=1 response_timeout=360
+bouncer.example.com role=bouncer node=3
+replica.example.com role=replica node=2
+master.example.com role=master node=1
 
 [all:vars]
 ansible_ssh_user=ubuntu

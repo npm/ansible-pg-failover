@@ -13,6 +13,13 @@
   - name: install repmgr functions on each pg
     command: "psql 'dbname=repmgr user=postgres port=5432' -f {{pg_config_repmgr_funcs}}"
 
+  - name: log to syslog
+    sudo: true
+    lineinfile: >
+      dest={{pg_config_postgresql_conf}}
+      line="log_destination = 'stderr,syslog'"
+      regexp='^log_destination.*$'
+
   - name: allow all pg servers to interconnect for replication
     sudo: true
     lineinfile: >
