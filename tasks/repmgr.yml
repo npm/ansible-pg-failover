@@ -4,3 +4,4 @@
   with_items:
     - repmgr
     - postgresql-9.3-repmgr
+    - postgresql-contrib-9.3
