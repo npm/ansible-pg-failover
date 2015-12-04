@@ -3,5 +3,5 @@
   apt: pkg="{{item}}" state=present force=true update_cache=yes
   with_items:
     - repmgr
-    - postgresql-9.3-repmgr
-    - postgresql-contrib-9.3
+    - "postgresql-{{postgresql_version}}-repmgr"
+    - "postgresql-contrib-{{postgresql_version}}"

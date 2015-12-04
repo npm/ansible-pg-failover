@@ -23,7 +23,7 @@ postgresql_user_privileges:
 
 pg_config_postgresql_conf: "{{postgresql_conf_directory}}/postgresql.conf"
 pg_config_pg_hba_conf: "{{postgresql_conf_directory}}/pg_hba.conf"
-pg_config_repmgr_funcs: /usr/share/postgresql/9.3/contrib/repmgr_funcs.sql
+pg_config_repmgr_funcs: "/usr/share/postgresql/{{postgresql_version}}/contrib/repmgr_funcs.sql"
 
 # a public and private key for interconnecting pg nodes.
 pg_config_public_key: ssh-rsa not-a-real-key
