@@ -20,6 +20,13 @@
       line="log_destination = 'stderr,syslog'"
       regexp='^log_destination.*$'
 
+  - name: increase max connections
+    sudo: true
+    lineinfile: >
+      dest={{pg_config_postgresql_conf}}
+      line="max_connections = 200"
+      regexp='^max_connections.*$'
+
   - name: allow all pg servers to interconnect for replication
     sudo: true
     lineinfile: >
